@@ -109,8 +109,8 @@ button{
 
 .hero img{
 	width: 60%;
-	border-top-left-radius: 1rem;
-	border-bottom-left-radius: 1rem;
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
 }
 
 .card{
@@ -119,8 +119,8 @@ button{
 	justify-content: center;
 	background-color: #f1f2f4;
 	padding: 0 2rem;
-	border-top-right-radius: 1rem;
-	border-bottom-right-radius: 1rem;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
 	gap: 1.5rem;
 }
 
