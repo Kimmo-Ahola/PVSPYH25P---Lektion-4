@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,4 +48,115 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body{
+	font-family: "Poppins", Arial, sans-serif;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 2rem;
+}
+
+header nav ul{
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+section{
+	margin-bottom: 3rem;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+button{
+	font-style: inherit;
+	width: fit-content;
+	padding: 0.5rem 1rem;
+	color: white;
+	background-color: blue;
+	border-radius: 9999px;
+	border: none;
+}
+
+.hero, .recipe, .cooking, .ingredients{
+	display: flex;
+}
+
+.hero{
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.hero img{
+	width: 60%;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f1f2f4;
+	padding: 0 2rem;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	gap: 1.5rem;
+}
+
+.card > div {
+	display: flex;
+	align-items: center;
+}
+
+.card p {
+	color: rgb(0, 0, 0);
+	font-weight: bolder;
+	padding-left: 0.5rem;
+}
+
+.card > div > img{
+	height: 50px;
+	width: auto;
+	border-radius: 50%;
+}
+
+.recipe{
+	display: flex;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.recipe > div{
+	flex: 1;
+}
+
+.ingredients, .cooking{
+	flex-direction: column;
+	gap: 2rem;
+}
+
+footer{
+	text-align: center;
+	margin-bottom: 2rem;
 }
