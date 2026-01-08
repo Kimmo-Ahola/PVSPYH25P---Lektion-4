@@ -1,0 +1,33 @@
+<table border="1">
+    <thead>
+        <tr>
+            <!-- <th>Name</th>
+            <th>Age</th>
+            <th>City</th> -->
+            {% for key in users[0].keys() %}
+                <th>{{ key|title }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- <tr>
+            <td>Sara</td>
+            <td>17</td>
+            <td>Göteborg</td>
+        </tr>
+
+        <tr>
+            <td>Sara</td>
+            <td>17</td>
+            <td>Göteborg</td>
+        </tr> -->
+        {% for user in users %}
+            <tr>
+                {% for key in users[0].keys() %}
+                    <td>{{ user.get(key, "") }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

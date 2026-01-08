@@ -1,0 +1,18 @@
+<h1>Hello, loop.html</h1>
+<!-- kommentar i html -->
+{# kommentar i python #}
+
+<ul>
+    {% for i in range(1, 10) %}
+        {% if i % 2 == 0 %}
+            <li>I refuse to print even numbers</li>
+        {% else %}
+            <li>{{ i }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+{% if name %}
+Your name is: {{name}}
+Your age is: {{age}}
+{% endif %}
